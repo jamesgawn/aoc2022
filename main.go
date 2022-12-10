@@ -1,6 +1,7 @@
 package main
 
 import (
+	"aoc2022/day1"
 	"aoc2022/dayx"
 	"aoc2022/pkg/utils"
 	"io"
@@ -40,6 +41,8 @@ func FindSolution(day string, input io.Reader) {
 	switch day {
 	case "x":
 		dayx.ExecuteSolution(input)
+	case "1":
+		day1.ExecuteSolution(input)
 	default:
 		log.Fatal("I can't solve every problem... not yet anyway")
 	}
